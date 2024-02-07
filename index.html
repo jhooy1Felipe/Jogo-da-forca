@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Adivinhação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Jogo da Adivinhação</h1>
+        <p>Fruta com a primeira letra: <span id="start-letter"></span></p>
+        <p>Dica: <span id="hint"></span></p>
+
+        <div id="result"></div>
+
+        <div id="hangman"></div>
+
+        <input type="text" id="input-box" placeholder="Digite o nome da Fruta">
+        <button id="submit-button" onclick="Buton()">Enviar Resposta</button>
+
+        <button id="next-question-button" onclick="nextQuestion()" style="display: none;">Próxima Pergunta</button>
+
+        <button id="restart-button" onclick="restartGame()" style="display: none;">Reiniciar Jogo</button>
+
+        <button id="show-result-button" onclick="showResultsPopup()" style="display: none;">Mostrar Resultado</button>
+
+        <div id="result-popup" class="popup">
+            <div class="popup-content">
+                <h2>Resultado do Jogo</h2>
+                <p>Respostas corretas: <span id="correct-count"></span></p>
+                <p>Respostas incorretas: <span id="incorrect-count"></span></p>
+                <button onclick="closeResultsPopup()">Fechar</button>
+            </div>
+        </div>
+
+        <script>
+            // Adicione este trecho no final do script
+            document.addEventListener("DOMContentLoaded", function () {
+                const resultPopup = document.getElementById('result-popup');
+                resultPopup.style.display = 'none';
+            });
+        </script>
+        
+    </div>
+
+    <script src="java.js"></script>
+</body>
+</html>
+
