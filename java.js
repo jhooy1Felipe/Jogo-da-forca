@@ -8,7 +8,7 @@ const initialWordsAndHints = [
     { word: 'kiwi', hint: 'Fruta marrom e peluda por fora, verde por dentro' },
     { word: 'melão', hint: 'Fruta grande e doce' },
     { word: 'caju', hint: 'Fruta doce e gostosa que contem castanha' },
-    { word: 'Jambo', hint: 'Fruta pequena, meia roxa e doce' }
+    { word: 'jambo', hint: 'Fruta pequena, meia roxa e doce' }
 ];
 
 let selectedWord, hint, remainingAttempts = 3, hiddenWord = '';
