@@ -1,14 +1,14 @@
 const initialWordsAndHints = [
     { word: 'maçã', hint: 'Fruta vermelha' },
-    { word: 'banana', hint: 'Fruta amarela' },
-    { word: 'cereja', hint: 'Fruta pequena e vermelha' },
-    { word: 'laranja', hint: 'Fruta cítrica' },
+    { word: 'pera', hint: 'Fruta verde e doce' },
+    { word: 'manga', hint: 'Fruta gostosa, verde por fora amarela por dentro' },
+    { word: 'coco', hint: 'Fruta que tem água dentro' },
     { word: 'uva', hint: 'Fruta roxa ou verde, pequena e redonda' },
     { word: 'limão', hint: 'Fruta verde e ácida' },
     { word: 'kiwi', hint: 'Fruta marrom e peluda por fora, verde por dentro' },
     { word: 'melão', hint: 'Fruta grande e doce' },
-    { word: 'pêssego', hint: 'Fruta macia com caroço' },
-    { word: 'ameixa', hint: 'Fruta pequena e suculenta' }
+    { word: 'caju', hint: 'Fruta doce e gostosa que contem castanha' },
+    { word: 'Jambo', hint: 'Fruta pequena, meia roxa e doce' }
 ];
 
 let selectedWord, hint, remainingAttempts = 3, hiddenWord = '';
